@@ -319,11 +319,6 @@ will be:
         helm upgrade secure-dataset-access-service helm/secure-dataset-access-service -n ${compute_namespace}
     ```
 
-   Lastly patch the secret with the actual token value of the service account. I have placed
-   the token in the file `./root-folder/etc/tokens/token`
-    ```shell
-        kubectl -n domino-compute patch secret secure-datasets-client-token --patch="{\"data\":{\"token\":\"$(base64 -i ./root-folder/etc/tokens/token)\"}}"
-    ```
    
 ## Improvments
 
