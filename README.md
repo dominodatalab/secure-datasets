@@ -275,6 +275,10 @@ The `secure-datasets-svc` has all the possible mounts.
    - The user will request a prod dataset to be created by `prod-app-1-owner`
    - It is the responsibility of the `prod-app-1-owner` to ensure that only the right users have access to these datasets
 
+## Installation Pre-requisites
+
+Install [Domsed](https://github.com/dominodatalab/domino-field-solutions-installations/tree/main/domsed)
+
 ## Installation
 
 0. Build the image by running the following command
